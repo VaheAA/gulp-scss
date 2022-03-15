@@ -1,5 +1,4 @@
 import imagemin from 'gulp-imagemin';
-import webp from 'gulp-webp';
 
 export const images = () => {
   return app.gulp
@@ -13,7 +12,6 @@ export const images = () => {
       )
     )
     .pipe(app.plugins.newer(app.path.build.images))
-    .pipe(app.plugins.ifPlugin(app.isBuild, webp()))
     .pipe(
       app.plugins.ifPlugin(app.isBuild, app.gulp.dest(app.path.build.images))
     )
@@ -29,7 +27,7 @@ export const images = () => {
         app.isBuild,
         imagemin({
           progressive: true,
-          svgoPlugins: [{removeVieBox: false}],
+          svgoPlugins: [{ removeVieBox: false }],
           interlaced: true,
           optimizationLevel: 3
         })
