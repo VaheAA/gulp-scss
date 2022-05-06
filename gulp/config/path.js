@@ -6,12 +6,12 @@ const srcFolder = `./src`;
 
 export const path = {
   build: {
-    js: `${buildFolder}/js/`,
-    css: `${buildFolder}/css/`,
+    js: `${buildFolder}/assets/js/`,
+    css: `${buildFolder}/assets/css/`,
     html: `${buildFolder}/`,
-    images: `${buildFolder}/img/`,
-    fonts: `${buildFolder}/fonts/`,
-    files: `${buildFolder}/files/`
+    images: `${buildFolder}/assets/img/`,
+    fonts: `${buildFolder}/assets/fonts/`,
+    files: `${buildFolder}/assets/files/`
   },
   src: {
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
