@@ -14,13 +14,13 @@ export const path = {
     files: `${buildFolder}/assets/files/`
   },
   src: {
-    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
-    svg: `${srcFolder}/img/**/*.svg`,
-    js: `${srcFolder}/js/app.js`,
-    scss: `${srcFolder}/scss/style.scss`,
+    images: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,webp}`,
+    svg: `${srcFolder}/assets/img/**/*.svg`,
+    js: `${srcFolder}/assets/js/app.js`,
+    scss: `${srcFolder}/assets/scss/style.scss`,
     html: `${srcFolder}/*.html`,
-    files: `${srcFolder}/files/**/*.*`,
-    svgicons: `${srcFolder}/svgicons/*.svg`
+    files: `${srcFolder}/assets/files/**/*.*`,
+    svgicons: `${srcFolder}/assets/img/svgicons/*.svg`
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
