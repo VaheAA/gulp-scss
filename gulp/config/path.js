@@ -8,7 +8,7 @@ export const path = {
   build: {
     js: `${buildFolder}/assets/js/`,
     css: `${buildFolder}/assets/css/`,
-    html: `${buildFolder}/`,
+    php: `${buildFolder}/`,
     images: `${buildFolder}/assets/img/`,
     fonts: `${buildFolder}/assets/fonts/`,
     files: `${buildFolder}/assets/files/`
@@ -18,14 +18,14 @@ export const path = {
     svg: `${srcFolder}/assets/img/**/*.svg`,
     js: `${srcFolder}/assets/js/app.js`,
     scss: `${srcFolder}/assets/scss/style.scss`,
-    html: `${srcFolder}/*.html`,
+    php: `${srcFolder}/*.php`,
     files: `${srcFolder}/assets/files/**/*.*`,
     svgicons: `${srcFolder}/assets/img/svgicons/*.svg`
   },
   watch: {
     js: `${srcFolder}/assets/js/**/*.js`,
     scss: `${srcFolder}/assets/scss/**/*.scss`,
-    html: `${srcFolder}/**/*.html`,
+    php: `${srcFolder}/**/*.php`,
     images: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,svg,ico,webp}`,
     files: `${srcFolder}/assets/files/**/*.*`
   },

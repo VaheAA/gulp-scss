@@ -1,9 +1,15 @@
 export const server = (done) => {
-  app.plugins.browsersync.init({
-    server: {
-      baseDir: `${app.path.build.html}`
-    },
-    notify: false,
-    port: 3000
+  app.plugins.php.server({
+    base: `${app.path.build.php}`,
+    port: 3000,
+    keepalive: true,
+    index: '/index.php',
+    function() {
+      app.plugins.browsersync.init({
+        proxy: "localhost:3000",
+        baseDir: `${app.path.build.php}`,
+        notify: false,
+      });
+    }
   });
 };
