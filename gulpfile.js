@@ -19,6 +19,7 @@ import { scss } from './gulp/tasks/scss.js';
 import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
 import { otfToTtf, ttfToWoff } from './gulp/tasks/fonts.js';
+import { SVGsprite } from './gulp/tasks/svgSprite.js';
 // Files change wathcer
 function watcher() {
   gulp.watch(path.watch.files, copy);
