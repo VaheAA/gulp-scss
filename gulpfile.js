@@ -28,6 +28,8 @@ function watcher() {
   gulp.watch(path.watch.images, images);
 }
 
+export { SVGsprite };
+
 const fonts = gulp.series(otfToTtf, ttfToWoff);
 const mainTasks = gulp.series(
   fonts,

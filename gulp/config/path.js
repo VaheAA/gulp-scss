@@ -23,11 +23,11 @@ export const path = {
     svgicons: `${srcFolder}/assets/img/svgicons/*.svg`
   },
   watch: {
-    js: `${srcFolder}/js/**/*.js`,
-    scss: `${srcFolder}/scss/**/*.scss`,
+    js: `${srcFolder}/assets/js/**/*.js`,
+    scss: `${srcFolder}/assets/scss/**/*.scss`,
     html: `${srcFolder}/**/*.html`,
-    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg,ico,webp}`,
-    files: `${srcFolder}/files/**/*.*`
+    images: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,svg,ico,webp}`,
+    files: `${srcFolder}/assets/files/**/*.*`
   },
   clean: buildFolder,
   buildFolder: buildFolder,
