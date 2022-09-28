@@ -33,7 +33,7 @@
     "gulp-version-number": "^0.2.4",
     "sass": "^1.49.0",
     "webp-converter": "^2.2.3",
-    "webpack": "^5.67.0",
+    "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   }
 }
