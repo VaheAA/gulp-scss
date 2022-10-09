@@ -21,7 +21,8 @@ export const scss = () => {
     .pipe(app.plugins.replace(/@img\//g, '../img/'))
     .pipe(
       sass({
-        outputStyle: 'expanded'
+        outputStyle: 'expanded',
+        sourcemaps: app.isDev
       })
     )
     .pipe(app.plugins.ifPlugin(app.isBuild, groupCssMediaQueries()))

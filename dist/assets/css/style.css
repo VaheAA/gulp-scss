@@ -2,12 +2,14 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
   scroll-behavior: smooth;
 }
+
 body,
 h1,
 h2,
@@ -22,14 +24,17 @@ ul {
   padding: 0;
   font-weight: normal;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 a,
 a:active {
   text-decoration: none;
